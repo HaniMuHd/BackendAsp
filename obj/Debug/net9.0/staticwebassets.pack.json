@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Backend Asp\\BackendAsp\\wwwroot\\uploads\\1cbae880-778f-4a16-a8a4-8f37ebd466f8_original.jpg",
+      "PackagePath": "staticwebassets\\uploads\\1cbae880-778f-4a16-a8a4-8f37ebd466f8_original.jpg"
+    },
+    {
+      "Id": "D:\\Backend Asp\\BackendAsp\\wwwroot\\uploads\\68f702bc-5deb-4a0b-b845-3f08c8dc0ca7_original.jpg",
+      "PackagePath": "staticwebassets\\uploads\\68f702bc-5deb-4a0b-b845-3f08c8dc0ca7_original.jpg"
+    },
+    {
+      "Id": "D:\\Backend Asp\\BackendAsp\\wwwroot\\uploads\\df36e110-77f3-4ef6-80c3-00bff4fcd825_compressed.jpg",
+      "PackagePath": "staticwebassets\\uploads\\df36e110-77f3-4ef6-80c3-00bff4fcd825_compressed.jpg"
+    },
+    {
+      "Id": "D:\\Backend Asp\\BackendAsp\\wwwroot\\uploads\\f3fa0bbb-7856-43be-b76c-e0e08fd1fde1_compressed.jpg",
+      "PackagePath": "staticwebassets\\uploads\\f3fa0bbb-7856-43be-b76c-e0e08fd1fde1_compressed.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.BackendAsp.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.BackendAsp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.BackendAsp.props",
+      "PackagePath": "build\\BackendAsp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.BackendAsp.props",
+      "PackagePath": "buildMultiTargeting\\BackendAsp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.BackendAsp.props",
+      "PackagePath": "buildTransitive\\BackendAsp.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
