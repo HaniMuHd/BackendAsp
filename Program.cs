@@ -30,8 +30,8 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 // Add this configuration for Railway deployment
 builder.WebHost.ConfigureKestrel(serverOptions =>
 {
-    // Get port from environment variable or use default 8080
-    var port = int.Parse(Environment.GetEnvironmentVariable("PORT") ?? "8080");
+    // Try to get port from environment variable, fallback to 5000 for local development
+    var port = int.Parse(Environment.GetEnvironmentVariable("PORT") ?? "5000");
     serverOptions.ListenAnyIP(port);
 });
 
