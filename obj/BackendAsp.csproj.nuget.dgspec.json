@@ -1,32 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "D:\\BackendAsp\\BackendAsp.csproj": {}
+    "D:\\Backend Asp\\BackendAsp\\BackendAsp.csproj": {}
   },
   "projects": {
-    "D:\\BackendAsp\\BackendAsp.csproj": {
+    "D:\\Backend Asp\\BackendAsp\\BackendAsp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\BackendAsp\\BackendAsp.csproj",
+        "projectUniqueName": "D:\\Backend Asp\\BackendAsp\\BackendAsp.csproj",
         "projectName": "BackendAsp",
-        "projectPath": "D:\\BackendAsp\\BackendAsp.csproj",
-        "packagesPath": "C:\\Users\\rovar\\.nuget\\packages\\",
-        "outputPath": "D:\\BackendAsp\\obj\\",
+        "projectPath": "D:\\Backend Asp\\BackendAsp\\BackendAsp.csproj",
+        "packagesPath": "C:\\Users\\Rekar\\.nuget\\packages\\",
+        "outputPath": "D:\\Backend Asp\\BackendAsp\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\rovar\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Rekar\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Users\\Rovar\\packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
