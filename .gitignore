@@ -1,3 +1,6 @@
+# Add this at the top of your .gitignore
+!Dockerfile
+
 # .NET Core build folders
 bin/
 obj/

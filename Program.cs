@@ -27,9 +27,13 @@ builder.Services.AddCors(options =>
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// Configure for Railway deployment
-var port = Environment.GetEnvironmentVariable("PORT") ?? "8080";
-builder.WebHost.UseUrls($"http://localhost:{port}");
+// Add this configuration for Railway deployment
+builder.WebHost.ConfigureKestrel(serverOptions =>
+{
+    // Get port from environment variable or use default 8080
+    var port = int.Parse(Environment.GetEnvironmentVariable("PORT") ?? "8080");
+    serverOptions.ListenAnyIP(port);
+});
 
 var app = builder.Build();
 

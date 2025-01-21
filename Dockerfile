@@ -6,19 +6,18 @@ EXPOSE 443
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
 COPY ["BackendAsp.csproj", "./"]
-RUN dotnet restore "BackendAsp.csproj"
+RUN dotnet restore
 COPY . .
-RUN dotnet build "BackendAsp.csproj" -c Release -o /app/build
+RUN dotnet publish -c Release -o /app/publish
 
-FROM build AS publish
-RUN dotnet publish "BackendAsp.csproj" -c Release -o /app/publish
-
-FROM base AS final
+FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS final
 WORKDIR /app
-COPY --from=publish /app/publish .
+COPY --from=build /app/publish .
+EXPOSE 8080
+ENV ASPNETCORE_URLS=http://+:8080
+ENTRYPOINT ["dotnet", "BackendAsp.dll"]
 
 # Create the uploads directory
 RUN mkdir -p wwwroot/uploads && chmod 777 wwwroot/uploads
 
-ENV ASPNETCORE_URLS=http://+:80
 ENTRYPOINT ["dotnet", "BackendAsp.dll"] 
